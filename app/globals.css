@@ -1,26 +1,143 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--background: #ffffff;
+	--foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+	:root {
+		--background: #0a0a0a;
+		--foreground: #ededed;
+	}
+}
+
+@layer utilities {
+	@keyframes shine {
+		0% {
+			filter: brightness(3);
+			transform: scale(1.4) translateY(-10%);
+		}
+		50% {
+			filter: brightness(5);
+			transform: scale(1.4) translateY(-10%);
+		}
+		100% {
+			filter: brightness(1) contrast(1.2);
+			transform: scale(1.2) translateY(0%);
+		}
+	}
+	.animate-shine {
+		animation: shine .6s ease-in-out forwards;
+	}
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	background: var(--background);
+	color: var(--foreground);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* オープニング画面 */
+.l-footer {
+	opacity: 0;
+}
+.l-footer.is-show {
+	opacity: 1;
+	transition: .3s opacity ease-in-out;
+}
+.img-miko {
+	margin-top: .5em;
+	margin-right: -.5em;
+	opacity: 0;
+	transition: .1s all ease-in-out;
+}
+.img-miko.animate-shine {
+	opacity: 1;
+}
+.img-miko.is-hidden {
+	opacity: 0;
+}
+.is-flashed {
+	z-index: 100;
+}
+.is-flashed::before {
+	content: '';
+	background: #fff !important;
+	opacity: 0.6;
+	position: absolute;
+	inset: 0;
+}
+.is-shined {
+	background-image: url(/assets/bg-home-shined.webp) !important;
+}
+
+.img-logo img,
+.btn-home {
+	opacity: 0;
+	transition: .5s all ease-in-out;
+}
+.img-logo.is-show img,
+.btn-home.is-show {
+	opacity: 1;
+}
+
+/* オリジナルパレット */
+.bg-gold {
+	background: linear-gradient(  135deg,
+  #b29231 0%,
+  #c9a947 15%,
+  #dab139 35%,
+  rgb(192, 158, 35) 55%,
+  #a5872b 100%);
+}
+
+/* 明朝体 */
+.old-standard-tt-bold {
+	font-family: "Old Standard TT", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* 縦書き */
+.jp-vertical {
+	writing-mode: vertical-rl;
+}
+
+/* 巫女さんのセリフ */
+.miko-message p {
+	margin-inline: auto;
+	width: fit-content;
+}
+
+.scrollbar-none {
+	scrollbar-width: none;
+}
+
+/* ショップ画面 */
+.header-img {
+	height: 30vh;
+	width: 100%;
+}
+.shop-item-list {
+	max-height: calc(70vh - 60px);
+}
+@media screen and (min-width: 768px) {
+	.header-img {
+		height: 45vh;
+		width: 100%;
+	}
+	.shop-item-list {
+		max-height: calc(45vh - 60px);
+	}
+}
+.item-flame {
+	background: url(../public/assets/collection/collection-flame.webp) no-repeat center / contain;
 }
