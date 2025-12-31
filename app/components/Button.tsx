@@ -26,6 +26,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 				${colorClasses[color]}
 				cursor-pointer
 				text-white
+				text-sm
 				font-bold
 				py-4 px-8
 				rounded-full
