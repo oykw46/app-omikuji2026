@@ -75,7 +75,7 @@ export const FortuneResult = ({
 				<div className='relative shadow-lg '>
 					<div className='absolute inset-0 bg-white opacity-80'></div>
 					<h1 className='text-lg text-center font-bold py-6 text-red-600 old-standard-tt-bold relative'>{fortune.level}</h1>
-					<div className='space-y-6 text-left pr-4 py-8 overflow-y-scroll max-w-full relative jp-vertical scrollbar-none max-sm:max-h-60 max-sm:h-100'>
+					<div className='space-y-6 text-left pl-4 py-8 overflow-y-scroll max-w-full relative jp-vertical scrollbar-none max-sm:max-h-60 max-sm:h-100'>
 						{fortuneItems.map((item, index) => (
 							<FortuneLetter 
 								key={index}
