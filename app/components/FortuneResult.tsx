@@ -85,7 +85,7 @@ export const FortuneResult = ({
 						))}
 					</div>
 				</div>
-				<div className='flex gap-4 justify-center relative'>
+				<div className='flex gap-4 justify-center pt-1 relative'>
 					<Button
 						text='もう一度引く'
 						onClick={onDrawAgain}
