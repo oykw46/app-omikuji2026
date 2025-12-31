@@ -72,7 +72,7 @@ export default function ShopPage() {
                     {/* 店員さんのセリフ */}
                     <div className='miko-message rounded-lg shadow-lg p-4 mt-4 max-w-md mx-auto absolute bottom-3 left-14 right-14'>
                         <div className='absolute inset-0 bg-white opacity-90 rounded-2xl'></div>
-                        <p className='text-gray-800 relative'>
+                        <p className='text-gray-800 relative text-sm'>
                             {shopkeeper.message}
                         </p>
                         {/* 吹き出しの三角 */}
