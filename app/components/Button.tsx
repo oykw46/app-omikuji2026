@@ -29,7 +29,6 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 				font-bold
 				py-4 px-8
 				rounded-full
-				text-xl
 				transition-all
 				transform
 				hover:scale-105
