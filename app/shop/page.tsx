@@ -59,7 +59,7 @@ export default function ShopPage() {
                 </div>
 
                 {/* 店員さん */}
-                <div className='relative header-img border-b shadow-lg border-gray-100'>
+                <div className='relative header-img border-b border-gray-100'>
                     <Image
                         src={shopkeeper.image}
                         alt='ショップの巫女さん（ミク）'
@@ -82,7 +82,7 @@ export default function ShopPage() {
 
                 <div className='overflow-y-scroll shop-item-list'>
                     {/* 商品リスト */}
-                    <div className='flex flex-col pt-4 pb-6 bg-gray-100'>
+                    <div className='flex flex-col pt-4 pb-12 bg-gray-100'>
                         {shopItems.map((item) => {
                             const owned = hasItem(item.id)
                             const canBuy = points >= item.price && !owned
@@ -90,7 +90,7 @@ export default function ShopPage() {
                             return (
                                 <div
                                     key={item.id}
-                                    className='bg-white rounded-xl px-6 py-8 mx-4 mb-4 relative'
+                                    className='bg-white rounded-xl px-6 py-10 mx-4 mb-4 relative shadow-lg'
                                 >
                                     {/* 購入済みバッジ */}
                                     {owned && (
@@ -108,7 +108,7 @@ export default function ShopPage() {
                                         </div>
 
                                         <div className='w-3/4'>
-                                            <h3 className='text-lg font-bold mb-2'>{item.name}</h3>
+                                            <h3 className='text-lg font-bold mb-2 text-orange-900'>{item.name}</h3>
                                             <p className='text-gray-600 text-sm whitespace-normal'>{item.description}</p>
                                             <div className={`flex items-center justify-between mt-4
                                                 ${ owned ? 'hidden' : canBuy ? '' : '' }`}
@@ -147,7 +147,7 @@ export default function ShopPage() {
             </div>
 
             {/* アイテム獲得モーダル */}
-            {showSuccessModal && (
+            {showSuccessModal && purchasedItem && (
                 <div className="fixed inset-0 flex items-center justify-center z-50">
                     <div className='absolute inset-0 bg-black opacity-80 -z[1]'></div>
                     <div className="bg-white rounded-lg p-6 max-w-md mx-4 text-center relative">

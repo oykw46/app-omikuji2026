@@ -22,7 +22,7 @@ export default function Home() {
   	const { points, recordFortuneWithPoints } = useGameData() 
 
 	// ローディングアニメーション（HOMEのみ）
-	const { loaded, imgLogoRef, imgMikoRef, buttonRef, bgRef } = useHomeAnimation(screen === 'home')
+	const { loaded, imgLogoRef, imgMikoRef, buttonRef, bgRef, footerRef } = useHomeAnimation(screen === 'home')
 
 	// ポイントが変わるたびにログ
 	useEffect(() => {
@@ -56,17 +56,10 @@ export default function Home() {
 		<main className='min-h-screen overflow-hidden'>
 			{/* HOME画面 */}
 			{screen === 'home' && (
+				<>
 				<div className='min-h-screen flex flex-col items-center justify-start p-4 pt-8 pb-20 relative'>
 				<Background ref={bgRef} imageUrl="/assets/bg-home.webp" animate={false} />
 				<Logo ref={imgLogoRef} />
-				{/* <Image
-					ref={imgMikoRef}
-					src='/assets/miko-home.webp'
-					alt='ミコ'
-					height={300}
-					width={300}
-					className='img-miko block mx-auto h-auto w-auto max-sm:w-11/12 max-sm:max-w-auto'
-				/> */}
 				<Image
 					ref={imgMikoRef}
 					src='/assets/miko-home.webp'
@@ -83,12 +76,15 @@ export default function Home() {
 					className='btn-home max-sm:mt-4 -mt-12 relative mx-auto max-sm:w-11/12 max-w-3/5 w-full'
 				/>
 				</div>
+				<Footer currentPage='home' ref={footerRef} screen='home' />
+				</>
 			)}
 
 			{/* シャカシャカ画面 */}
 			{screen === 'shaking' && (
+				<>
 				<div className='min-h-screen flex items-center justify-center p-4 relative'>
-					<Background imageUrl="/assets/bg-shaking.webp" animate={false} />
+					<Background imageUrl="/assets/shaking/bg-shaking.webp" animate={false} />
 					<div className='mx-auto w-full relative animate-bounce'>
 						<Image
 							src='/assets/shaking/omikujibox.webp'
@@ -106,10 +102,12 @@ export default function Home() {
 						className='block mx-auto h-auto w-auto max-sm:w-2/6 max-sm:max-w-auto absolute'
 					/> */}
 				</div>
+				</>
 			)}
 
 			{/* 結果画面 */}
 			{screen === 'result' && fortune && (
+				<>
 				<div className='min-h-screen flex flex-col items-center p-4 relative'>
 					<Background imageUrl="/assets/bg-shrine.webp" animate={false} />
 					<FortuneResult
@@ -119,8 +117,9 @@ export default function Home() {
 						onGoHome={goHome}
 					/>
 				</div>
+				<Footer currentPage='home' screen='result' />
+				</>
 			)}
-			<Footer currentPage='home' />
 		</main>
 	)
 }

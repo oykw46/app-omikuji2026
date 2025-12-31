@@ -88,7 +88,7 @@ export default function SettingsPage() {
                             onClick={handleSaveUsername}
                             className='bg-blue-500 hover:bg-gray-700 text-white font-bold px-6 py-2 rounded-lg transition-all'
                         >
-                            保存
+                            変更
                         </button>
                     </div>
                     <p className='text-gray-500 text-sm mt-2'>キャラクターのセリフに反映されます。</p>
@@ -244,7 +244,7 @@ export default function SettingsPage() {
                             <div className='absolute inset-0 bg-black opacity-80 -z[1]'></div>
                             <div className='bg-white rounded-lg py-12 px-6 max-w-md mx-4 text-center z-[1]'>
                                 {/* <div className='text-6xl mb-4'>✨</div> */}
-                                <h3 className='text-xl font-bold mb-4'>保存完了！</h3>
+                                <h3 className='text-xl font-bold mb-4'>変更完了！</h3>
                                 <p className='text-gray-700'>
                                     プレイヤー名を<br />
                                     「<span className='font-bold text-red-600'>{tempUsername}</span>」に変更しました。

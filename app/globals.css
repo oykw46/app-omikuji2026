@@ -46,13 +46,10 @@ body {
 }
 
 /* オープニング画面 */
-.l-footer {
-	opacity: 0;
+.l-footer.is-hidden {
+	display: none;
 }
-.l-footer.is-show {
-	opacity: 1;
-	transition: .3s opacity ease-in-out;
-}
+
 .img-miko {
 	margin-top: .5em;
 	margin-right: -.5em;
@@ -87,16 +84,6 @@ body {
 .img-logo.is-show img,
 .btn-home.is-show {
 	opacity: 1;
-}
-
-/* オリジナルパレット */
-.bg-gold {
-	background: linear-gradient(  135deg,
-  #b29231 0%,
-  #c9a947 15%,
-  #dab139 35%,
-  rgb(192, 158, 35) 55%,
-  #a5872b 100%);
 }
 
 /* 明朝体 */
@@ -138,6 +125,8 @@ body {
 		max-height: calc(45vh - 60px);
 	}
 }
+
+/* コレクション画面 */
 .item-flame {
 	background: url(../public/assets/collection/collection-flame.webp) no-repeat center / contain;
 }

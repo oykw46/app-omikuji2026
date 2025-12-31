@@ -8,6 +8,7 @@ export const useHomeAnimation = (isActive: boolean) => {
 	const imgMikoRef = useRef<HTMLImageElement>(null)
 	const buttonRef = useRef<HTMLButtonElement>(null)
 	const bgRef = useRef<HTMLDivElement>(null)
+	const footerRef = useRef<HTMLElement>(null)
 
 	useEffect(() => {
 		if (!isActive) return
@@ -29,6 +30,7 @@ export const useHomeAnimation = (isActive: boolean) => {
 		}, 1500)
 
 		const timer3 = setTimeout(() => {
+			footerRef.current?.classList.remove('hidden')
 			bgRef.current?.classList.remove('is-flashed')
 			bgRef.current?.classList.add('is-shined')
 			imgLogoRef.current?.classList.add('is-show')
@@ -43,5 +45,5 @@ export const useHomeAnimation = (isActive: boolean) => {
 		}
 	}, [isActive])
 
-	return { loaded, imgLogoRef, imgMikoRef, buttonRef, bgRef }
+	return { loaded, imgLogoRef, imgMikoRef, buttonRef, bgRef, footerRef }
 }

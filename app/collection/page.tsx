@@ -37,7 +37,9 @@ export default function CollectionPage() {
                 </div>
             </div>
 
-            <div className='relative bg-gray-100 flex-1 w-full'>
+            <div className={`relative bg-gray-100 flex-1 w-full ${
+                myCollection.length === shopItems.length ? 'pb-4' : 'pb-12'
+            }`}>
                 {/* タイトル */}
                 <div className='text-center py-8 '>
                     <p className='text-gray-700'>
@@ -76,7 +78,7 @@ export default function CollectionPage() {
                                         className='mx-auto mb-4 relative z-10 w-10/12'
                                     />
                                 </div>
-                                <h2 className='text-md font-bold text-center mt-4 mb-2 text-blue-500'>
+                                <h2 className='text-md font-bold text-center mt-4 mb-2 text-orange-900'>
                                     {item.name}
                                 </h2>
                                 <p className='text-gray-600 text-left text-sm nb-2'>
