@@ -126,7 +126,7 @@ export default function ShopPage() {
                                                 <button
                                                     onClick={() => handleBuy(item.id, item.name, item.price, item.imageUrl)}
                                                     disabled={owned}
-                                                    className={`py-2 rounded-lg font-bold text-sm transition-all w-3/5 ${
+                                                    className={`py-2 rounded-lg font-bold text-xs transition-all w-3/5 ${
                                                         owned
                                                             ? 'bg-gray-300 text-gray-500 cursor-not-allowed hidden'
                                                             : canBuy
