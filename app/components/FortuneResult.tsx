@@ -71,7 +71,7 @@ export const FortuneResult = ({
 				</div>
 			</div>
 
-			<div className='absolute mt-60 max-sm:w-full'>
+			<div className='absolute mt-50 max-sm:w-full'>
 				<div className='relative shadow-lg '>
 					<div className='absolute inset-0 bg-white opacity-80'></div>
 					<h1 className='text-lg text-center font-bold py-6 text-red-600 old-standard-tt-bold relative'>{fortune.level}</h1>
