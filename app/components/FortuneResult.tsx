@@ -106,7 +106,7 @@ type FortuneLetterProps = {
 const FortuneLetter = ({ label, value }: FortuneLetterProps) => {
 	return (
 		<p className='flex gap-4 text-sm old-standard-tt-bold'>
-			<span className='font-semibold text-gray-700 h-14 whitespace-nowrap'>{ label }</span>
+			<span className='font-semibold text-gray-700 h-12 whitespace-nowrap'>{ label }</span>
 			<span className='text-gray-900 font-normal'>{ value }</span>
 		</p>
 	)
