@@ -61,7 +61,7 @@ export const FortuneResult = ({
 					className='mt-6 h-auto max-sm:w-1/2 w-auto mx-auto'
 				/>
 				{/* 巫女さんのセリフ */}
-				<div className='miko-message mx-auto mb-4 absolute top-25 max-sm:w-full'>
+				<div className='miko-message rounded-lg shadow-lg p-4 mt-4 max-w-md mx-auto absolute bottom-3 left-14 right-14'>
 					<div className='absolute inset-0 bg-white opacity-80 rounded-2xl'></div>
 					<p className='text-gray-800 text-left p-4 relative text-sm'>
 						{mikoMessage}
