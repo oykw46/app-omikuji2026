@@ -110,7 +110,7 @@ export default function ShopPage() {
                                         <div className='w-3/4'>
                                             <h3 className='text-lg font-bold mb-2 text-orange-900'>{item.name}</h3>
                                             <p className='text-gray-600 text-sm whitespace-normal'>{item.description}</p>
-                                            <div className={`flex gap-4 items-center mt-4
+                                            <div className={`flex gap-4 flex-start items-center mt-4
                                                 ${ owned ? 'hidden' : canBuy ? '' : '' }`}
                                             >
                                                 <div className='flex gap-2 items-center'>
