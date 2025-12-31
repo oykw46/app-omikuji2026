@@ -119,9 +119,9 @@ export default function ShopPage() {
                                                         alt='コイン'
                                                         height={16}
                                                         width={16}
-                                                        className='h-auto max-w-7 w-auto'
+                                                        className='h-auto max-w-5 w-auto'
                                                     />
-                                                    <span className='text-lg font-bold text-yellow-600'>{item.price}</span>
+                                                    <span className='text-base font-bold text-yellow-600'>{item.price}</span>
                                                 </div>
                                                 <button
                                                     onClick={() => handleBuy(item.id, item.name, item.price, item.imageUrl)}
