@@ -52,7 +52,7 @@ export const FortuneResult = ({
 				<div className='bg-white absolute inset-0 opacity-80 -z-[1]'></div>
 				<span className='text-base'>{count}</span> <span className='text-sm'>回目</span>
 			</div>
-			<div className='relative'>
+			<div className='relative w-full'>
 				<Image
 					src={getMikoFace()}
 					alt='おみくじ結果を読んでくれる巫女さん（ミコ）'
