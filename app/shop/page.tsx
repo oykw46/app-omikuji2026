@@ -59,7 +59,7 @@ export default function ShopPage() {
                 </div>
 
                 {/* 店員さん */}
-                <div className='relative header-img border-b border-gray-100'>
+                <div className='relative header-img border-b border-gray-100 pointer-events-none'>
                     <Image
                         src={shopkeeper.image}
                         alt='ショップの巫女さん（ミク）'
