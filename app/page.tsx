@@ -73,7 +73,7 @@ export default function Home() {
 					text='おみくじを引く'
 					onClick={drawOmikuji}
 					color='red'
-					className='btn-home max-sm:-mt-20 -mt-12 relative mx-auto max-sm:w-11/12 max-w-3/5 w-full'
+					className='btn-home max-sm:-mt-24 -mt-12 relative mx-auto max-sm:w-11/12 max-w-3/5 w-full'
 				/>
 				</div>
 				<Footer currentPage='home' ref={footerRef} screen='home' />

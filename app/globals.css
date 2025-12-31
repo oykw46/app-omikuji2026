@@ -46,7 +46,7 @@ body {
 }
 
 .max-h-screen {
-	max-height: 100svh;
+	max-height: 100svh !important;
 }
 
 /* オープニング画面 */
