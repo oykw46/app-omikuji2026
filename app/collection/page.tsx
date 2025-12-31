@@ -42,7 +42,7 @@ export default function CollectionPage() {
             }`}>
                 {/* タイトル */}
                 <div className='text-center py-8 '>
-                    <p className='text-gray-700'>
+                    <p className='text-gray-500'>
                         これまでに授かったお守りが並ぶ場所。<br />一つひとつにあなたの願いと<br />幸運が込められています。
                     </p>
                 </div>
@@ -66,7 +66,7 @@ export default function CollectionPage() {
                                 key={item.id}
                                 className='bg-white rounded-lg shadow-lg p-4 transform transition-all hover:scale-105'
                             >
-                                <div className='relative px-4 py-3'>
+                                <div className='relative px-4 py-3 w-5/6'>
                                     {/* 輝きエフェクト */}
                                     {/* <div className='absolute inset-0 bg-gradient-to-r from-yellow-200 to-orange-200 rounded-lg opacity-20 animate-pulse'></div> */}
                                     <div className='absolute inset-0 item-flame'></div>
