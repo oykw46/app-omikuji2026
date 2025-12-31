@@ -113,7 +113,7 @@ export default function ShopPage() {
                                             <div className={`flex items-center justify-between mt-4
                                                 ${ owned ? 'hidden' : canBuy ? '' : '' }`}
                                             >
-                                                <div className='w-1/5 flex gap-2 items-center'>
+                                                <div className='flex-1 flex gap-2 items-center'>
                                                     <Image
                                                         src='/assets/coin.webp'
                                                         alt='コイン'
@@ -126,7 +126,7 @@ export default function ShopPage() {
                                                 <button
                                                     onClick={() => handleBuy(item.id, item.name, item.price, item.imageUrl)}
                                                     disabled={owned}
-                                                    className={`py-2 rounded-lg font-bold text-xs transition-all w-3/5 ${
+                                                    className={`py-2 rounded-full font-bold text-xs transition-all w-4/5 ${
                                                         owned
                                                             ? 'bg-gray-300 text-gray-500 cursor-not-allowed hidden'
                                                             : canBuy
