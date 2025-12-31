@@ -110,7 +110,7 @@ export default function ShopPage() {
                                         <div className='w-3/4'>
                                             <h3 className='text-lg font-bold mb-2 text-orange-900'>{item.name}</h3>
                                             <p className='text-gray-600 text-sm whitespace-normal'>{item.description}</p>
-                                            <div className={`flex gap-2 items-center justify-between mt-4
+                                            <div className={`flex gap-4 items-center justify-between mt-4
                                                 ${ owned ? 'hidden' : canBuy ? '' : '' }`}
                                             >
                                                 <div className='flex-1 flex gap-2 items-center'>
@@ -126,7 +126,7 @@ export default function ShopPage() {
                                                 <button
                                                     onClick={() => handleBuy(item.id, item.name, item.price, item.imageUrl)}
                                                     disabled={owned}
-                                                    className={`py-2 rounded-full font-bold text-xs transition-all w-4/5 ${
+                                                    className={`py-2 rounded-full font-bold text-xs transition-all w-3/5 ${
                                                         owned
                                                             ? 'bg-gray-300 text-gray-500 cursor-not-allowed hidden'
                                                             : canBuy
