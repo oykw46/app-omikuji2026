@@ -113,7 +113,7 @@ export default function ShopPage() {
                                             <div className={`flex gap-4 items-center mt-4
                                                 ${ owned ? 'hidden' : canBuy ? '' : '' }`}
                                             >
-                                                <div className='flex-1 flex gap-2 items-center'>
+                                                <div className='flex gap-2 items-center'>
                                                     <Image
                                                         src='/assets/coin.webp'
                                                         alt='コイン'
