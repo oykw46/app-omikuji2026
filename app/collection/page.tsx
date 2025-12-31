@@ -14,7 +14,7 @@ export default function CollectionPage() {
 
     return (
         <main className='min-h-screen relative overflow-hidden pb-24 flex flex-col items-center max-w-3xl mx-auto'>
-            <div className='relative header-img border-b shadow-lg border-gray-100'>
+            <div className='relative header-img border-b shadow-lg border-gray-100 overflow-hidden'>
                 <Image
                     src='/assets/collection/bg-collection.webp'
                     alt=''
