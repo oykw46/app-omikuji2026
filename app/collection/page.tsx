@@ -20,7 +20,7 @@ export default function CollectionPage() {
                     alt=''
                     height={305}
                     width={390}
-                    className='h-full w-full object-cover'
+                    className='h-auto w-full object-cover'
                 />
 
                 {/* 集めたアイテムの数 */}
