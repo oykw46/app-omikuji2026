@@ -85,7 +85,7 @@ export const FortuneResult = ({
 						))}
 					</div>
 				</div>
-				<div className='flex gap-4 justify-center pt-1 relative'>
+				<div className='flex gap-4 justify-center pt-2 relative'>
 					<Button
 						text='もう一度引く'
 						onClick={onDrawAgain}
@@ -107,7 +107,7 @@ type FortuneLetterProps = {
 const FortuneLetter = ({ label, value }: FortuneLetterProps) => {
 	return (
 		<p className='flex gap-4 text-sm old-standard-tt-bold'>
-			<span className='font-semibold text-gray-700 h-12 whitespace-nowrap'>{ label }</span>
+			<span className='font-semibold text-gray-700 h-16 whitespace-nowrap'>{ label }</span>
 			<span className='text-gray-900 font-normal'>{ value }</span>
 		</p>
 	)
