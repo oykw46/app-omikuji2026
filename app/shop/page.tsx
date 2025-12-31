@@ -80,7 +80,7 @@ export default function ShopPage() {
                     </div>
                 </div>
 
-                <div className='overflow-y-scroll shop-item-list pb-20'>
+                <div className='overflow-y-scroll shop-item-list pb-24'>
                     {/* 商品リスト */}
                     <div className='flex flex-col pt-4'>
                         {shopItems.map((item) => {
