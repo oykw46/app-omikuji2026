@@ -65,7 +65,7 @@ export default function ShopPage() {
                         alt='ショップの巫女さん（ミク）'
                         height={305}
                         width={390}
-                        className='h-full w-full transition-all bject-cover'
+                        className='h-full w-full bject-cover'
                         key={shopkeeper.image}
                     />
 
