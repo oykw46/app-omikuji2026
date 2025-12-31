@@ -89,7 +89,7 @@ export const FortuneResult = ({
 						text='もう一度引く'
 						onClick={onDrawAgain}
 						color='red'
-						className='shadow-2xl'
+						className='shadow-2xl text-base'
 					/>
 				</div>
 			</div>
