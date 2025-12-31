@@ -96,7 +96,7 @@ export default function ShopPage() {
                                     {owned && (
                                         <div className='absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold'>購入済み</div>
                                     )}
-                                    <div className='flex gap-4 items-center justify-between'>
+                                    <div className='flex gap-6 items-center justify-between'>
                                         <div className='shop-item w-1/4'>
                                             <Image
                                                 src={item.imageUrl}
