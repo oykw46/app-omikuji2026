@@ -13,7 +13,7 @@ export default function CollectionPage() {
     const myCollection = shopItems.filter(item => ownedItems.includes(item.id))
 
     return (
-        <main className='min-h-screen relative overflow-hidden pb-24 flex flex-col items-center max-w-3xl mx-auto'>
+        <main className='min-h-screen relative overflow-hidden flex flex-col items-center max-w-3xl mx-auto'>
             <div className='relative header-img border-b shadow-lg border-gray-100 overflow-hidden'>
                 <Image
                     src='/assets/collection/bg-collection.webp'
@@ -38,7 +38,7 @@ export default function CollectionPage() {
             </div>
 
             <div className={`relative bg-gray-100 flex-1 w-full ${
-                myCollection.length === shopItems.length ? 'pb-4' : 'pb-12'
+                myCollection.length === shopItems.length ? 'pb-12' : 'pb-12'
             }`}>
                 {/* タイトル */}
                 <div className='text-center py-8 '>
@@ -66,7 +66,7 @@ export default function CollectionPage() {
                                 key={item.id}
                                 className='bg-white rounded-lg shadow-lg p-4 transform transition-all hover:scale-105'
                             >
-                                <div className='relative px-4 py-3 w-5/6'>
+                                <div className='relative px-4 py-3 w-5/6 mx-auto'>
                                     {/* 輝きエフェクト */}
                                     {/* <div className='absolute inset-0 bg-gradient-to-r from-yellow-200 to-orange-200 rounded-lg opacity-20 animate-pulse'></div> */}
                                     <div className='absolute inset-0 item-flame'></div>
