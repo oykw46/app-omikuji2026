@@ -58,7 +58,7 @@ export const FortuneResult = ({
 					alt='おみくじ結果を読んでくれる巫女さん（ミコ）'
 					height={300}
 					width={300}
-					className='mt-6 h-auto max-sm:w-1/2 w-auto mx-auto'
+					className='mt-4 h-auto max-sm:w-1/2 w-auto mx-auto'
 				/>
 				{/* 巫女さんのセリフ */}
 				<div className='miko-message rounded-lg shadow-lg p-4 max-w-md mx-auto absolute top-40 left-14 right-14'>
@@ -74,8 +74,8 @@ export const FortuneResult = ({
 			<div className='absolute mt-64 max-sm:w-full'>
 				<div className='relative shadow-lg '>
 					<div className='absolute inset-0 bg-white opacity-80'></div>
-					<h1 className='text-lg text-center font-bold pt-6 pb-2 text-red-600 old-standard-tt-bold relative'>{fortune.level}</h1>
-					<div className='space-y-6 text-left px-4 pb-8 overflow-y-scroll max-w-full relative jp-vertical scrollbar-none max-sm:max-h-60 max-sm:h-100'>
+					<h1 className='text-lg text-center font-bold pt-4 pb-2 text-red-600 old-standard-tt-bold relative'>{fortune.level}</h1>
+					<div className='space-y-6 text-left px-4 py-8 overflow-y-scroll max-w-full relative jp-vertical scrollbar-none max-sm:max-h-60 max-sm:h-100'>
 						{fortuneItems.map((item, index) => (
 							<FortuneLetter 
 								key={index}
