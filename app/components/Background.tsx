@@ -12,7 +12,7 @@ export const Background = forwardRef<HTMLDivElement, BackgroundProps>(
     return (
       <div
         	ref={ref}
-        	className={`absolute inset-0 bg-bottom bg-cover ${
+        	className={`absolute inset-0 bg-top bg-cover ${
         	animate ? 'animate-slow-sway' : ''
         } z-[-1]`}
         style={{ backgroundImage: `url(${imageUrl})` }}
