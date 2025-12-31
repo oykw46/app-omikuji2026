@@ -110,11 +110,11 @@ body {
 
 /* ショップ画面 */
 .header-img {
-	height: 35svh;
+	height: 40svh;
 	width: 100%;
 }
 .shop-item-list {
-	max-height: calc(65svh - 60px);
+	max-height: calc(60svh - 60px);
 }
 @media screen and (min-width: 768px) {
 	.header-img {

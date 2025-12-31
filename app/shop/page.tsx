@@ -80,9 +80,9 @@ export default function ShopPage() {
                     </div>
                 </div>
 
-                <div className='overflow-y-scroll shop-item-list pb-12'>
+                <div className='overflow-y-scroll bg-gray-100 shop-item-list pb-12'>
                     {/* 商品リスト */}
-                    <div className='flex flex-col pt-4 bg-gray-100'>
+                    <div className='flex flex-col pt-4'>
                         {shopItems.map((item) => {
                             const owned = hasItem(item.id)
                             const canBuy = points >= item.price && !owned
