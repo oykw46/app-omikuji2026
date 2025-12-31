@@ -13,7 +13,7 @@ export default function CollectionPage() {
     const myCollection = shopItems.filter(item => ownedItems.includes(item.id))
 
     return (
-        <main className='min-h-screen relative overflow-hidden pb-24 flex flex-col items-center'>
+        <main className='min-h-screen relative overflow-hidden pb-24 flex flex-col items-center max-w-3xl mx-auto'>
             <div className='relative header-img border-b shadow-lg border-gray-100'>
                 <Image
                     src='/assets/collection/bg-collection.webp'

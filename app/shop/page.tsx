@@ -43,7 +43,7 @@ export default function ShopPage() {
     const shopkeeper = getShopkeeperMessage(shopkeeperState, lastPurchasedItem, username)
 
     return (
-        <main className='min-h-screen relative overflow-hidden'>
+        <main className='min-h-screen max-h-screen relative overflow-hidden max-w-3xl mx-auto'>
             <div className='relative max-w-4xl w-full'>
                 {/* 所持ポイント */}
 			    <div className='text-yellow-900 overflow-hidden shadow-lg rounded-r-full py-1 pl-4 pr-5 absolute left-0 absolute top-6 z-[1] flex items-center gap-1 font-bold'>

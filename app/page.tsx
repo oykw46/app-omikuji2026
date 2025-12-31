@@ -53,7 +53,7 @@ export default function Home() {
 	}
 
 	return (
-		<main className='min-h-screen overflow-hidden'>
+		<main className='min-h-screen max-h-screen overflow-hidden max-w-3xl mx-auto'>
 			{/* HOME画面 */}
 			{screen === 'home' && (
 				<>

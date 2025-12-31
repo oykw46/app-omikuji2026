@@ -24,14 +24,14 @@ export const Footer = forwardRef<HTMLElement, FooterProps>(
         return (
             <footer
                 ref={ref}
-                className={`fixed bottom-0 left-0 right-0 z-20 shadow-lg l-footer ${
+                className={`fixed bottom-0 left-0 right-0 z-20 shadow-lg l-footer max-w-3xl mx-auto ${
                 screen === 'home' ? 'hidden' : ''
             }`}>
-                <div className='flex justify-around w-full bg-gray-50 max-w-full gap-2 max-sm:max-w-3/5 md:max-w-9/12 mx-auto'>
+                <div className='flex justify-around gap-2 w-full max-w-3/5 mx-auto'>
                     {/* HOME */}
                     <Link href='/' className={getLinkClass('home')}>
                         <span className='absolute inset-0 bg-black opacity-30'></span>
-                        <span className="text-xs tracking-wider font-bold absolute text-white inset-0 flex items-center justify-center">御神籤</span>
+                        <span className="max-sm:text-xs text-lg tracking-wider font-bold absolute text-white inset-0 flex items-center justify-center">御神籤</span>
                         <Image
                             src='/assets/nav/nav-home.webp'
                             alt='御神籤'
@@ -44,7 +44,7 @@ export const Footer = forwardRef<HTMLElement, FooterProps>(
                     {/* SHOP */}
                     <Link href="/shop" className={getLinkClass('shop')}>
                         <span className='absolute inset-0 bg-black opacity-30'></span>
-                        <span className="text-xs tracking-wider font-bold absolute text-white inset-0 flex items-center justify-center">交換所</span>
+                        <span className="max-sm:text-xs text-lg tracking-wider font-bold absolute text-white inset-0 flex items-center justify-center">交換所</span>
                         <Image
                             src='/assets/nav/nav-shop.webp'
                             alt='交換所'
@@ -57,7 +57,7 @@ export const Footer = forwardRef<HTMLElement, FooterProps>(
                     {/* COLLECTION */}
                         <Link href="/collection" className={getLinkClass('collection')}>
                             <span className='absolute inset-0 bg-black opacity-30'></span>
-                        <span className="text-xs tracking-wider font-bold absolute text-white inset-0 flex items-center justify-center">収集</span>
+                        <span className="max-sm:text-xs text-lg tracking-wider font-bold absolute text-white inset-0 flex items-center justify-center">収集</span>
                         <Image
                             src='/assets/nav/nav-collection.webp'
                             alt='収集'
@@ -70,7 +70,7 @@ export const Footer = forwardRef<HTMLElement, FooterProps>(
                     {/* SETTINGS */}
                     <Link href="/settings" className={getLinkClass('settings')}>
                         <span className='absolute inset-0 bg-black opacity-30'></span>
-                        <span className="text-xs tracking-wider font-bold absolute text-white inset-0 flex items-center justify-center">設定</span>
+                        <span className="max-sm:text-xs text-lg tracking-wider font-bold absolute text-white inset-0 flex items-center justify-center">設定</span>
                         <Image
                             src='/assets/nav/nav-settings.webp'
                             alt='設定'
