@@ -62,7 +62,7 @@ export const FortuneResult = ({
 				/>
 				{/* 巫女さんのセリフ */}
 				<div className='miko-message mx-auto mb-4 absolute top-40 max-sm:w-full'>
-					<p className='text-gray-800 whitespace-pre-line text-left bg-white rounded-lg shadow-lg p-4 relative'>
+					<p className='text-gray-800 whitespace-pre-line text-left bg-white rounded-lg shadow-lg p-4 relative text-sm'>
 						{mikoMessage}
 					</p>
 					{/* 吹き出しの三角 */}
@@ -74,7 +74,7 @@ export const FortuneResult = ({
 				<div className='relative shadow-lg '>
 					<div className='absolute inset-0 bg-white opacity-80'></div>
 					<h1 className='text-3xl text-center font-bold py-6 text-red-600 old-standard-tt-bold relative'>{fortune.level}</h1>
-					<div className='space-y-6 text-left pb-8 py-8 overflow-y-scroll max-w-full relative jp-vertical scrollbar-none max-sm:max-h-76 max-sm:h-100'>
+					<div className='space-y-6 text-left pb-8 py-8 overflow-y-scroll max-w-full relative jp-vertical scrollbar-none max-sm:max-h-76 max-sm:h-100 text-sm'>
 						{fortuneItems.map((item, index) => (
 							<FortuneLetter 
 								key={index}
