@@ -43,8 +43,8 @@ export default function ShopPage() {
     const shopkeeper = getShopkeeperMessage(shopkeeperState, lastPurchasedItem, username)
 
     return (
-        <main className='min-h-screen max-h-screen relative overflow-hidden max-w-3xl mx-auto'>
-            <div className='relative max-w-4xl w-full'>
+        <main className='min-h-screen max-h-screen relative overflow-hidden max-w-3xl mx-auto overflow-y-scroll'>
+            <div className='bg-gray-100 relative max-w-4xl w-full'>
                 {/* 所持ポイント */}
 			    <div className='text-yellow-900 overflow-hidden shadow-lg rounded-r-full py-1 pl-4 pr-5 absolute left-0 absolute top-6 z-[1] flex items-center gap-1 font-bold'>
                     <div className='bg-white absolute inset-0 opacity-90 -z-[1]'></div>
@@ -65,8 +65,8 @@ export default function ShopPage() {
                         alt='ショップの巫女さん（ミク）'
                         height={305}
                         width={390}
-                        className='h-full w-full transition-all duration-500 object-cover'
-                        key={shopkeeper.image} // 画像が変わるときにアニメーション
+                        className='h-full w-full transition-all bject-cover'
+                        key={shopkeeper.image}
                     />
 
                     {/* 店員さんのセリフ */}
@@ -80,7 +80,7 @@ export default function ShopPage() {
                     </div>
                 </div>
 
-                <div className='overflow-y-scroll bg-gray-100 shop-item-list pb-12'>
+                <div className='shop-item-list pb-12'>
                     {/* 商品リスト */}
                     <div className='flex flex-col pt-4'>
                         {shopItems.map((item) => {
