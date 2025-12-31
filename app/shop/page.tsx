@@ -43,7 +43,7 @@ export default function ShopPage() {
     const shopkeeper = getShopkeeperMessage(shopkeeperState, lastPurchasedItem, username)
 
     return (
-        <main className='min-h-screen max-h-screen relative overflow-hidden max-w-3xl mx-auto'>
+        <main className='min-h-screen max-h-screen relative overflow-hidden max-w-3xl mx-auto bg-gray-100'>
             <div className='relative max-w-4xl w-full bg-gray-100'>
                 {/* 所持ポイント */}
 			    <div className='text-yellow-900 overflow-hidden shadow-lg rounded-r-full py-1 pl-4 pr-5 absolute left-0 absolute top-6 z-[1] flex items-center gap-1 font-bold'>
@@ -65,12 +65,12 @@ export default function ShopPage() {
                         alt='ショップの巫女さん（ミク）'
                         height={305}
                         width={390}
-                        className='h-auto w-full bject-cover'
+                        className='h-auto w-full bject-cover md:-mt-12'
                         key={shopkeeper.image}
                     />
 
                     {/* 店員さんのセリフ */}
-                    <div className='miko-message rounded-lg shadow-lg p-4 mt-4 max-w-md mx-auto absolute bottom-3 left-14 right-14'>
+                    <div className='miko-message rounded-lg shadow-lg p-4 mt-4 max-w-md mx-auto absolute bottom-3 md:bottom-8 left-14 right-14'>
                         <div className='absolute inset-0 bg-white opacity-80 rounded-2xl'></div>
                         <p className='text-gray-800 relative text-sm'>
                             {shopkeeper.message}
@@ -80,9 +80,9 @@ export default function ShopPage() {
                     </div>
                 </div>
 
-                <div className='overflow-y-scroll shop-item-list pb-18'>
+                <div className='overflow-y-scroll shop-item-list pb-18 md:mt-6'>
                     {/* 商品リスト */}
-                    <div className='flex flex-col pt-4'>
+                    <div className='flex flex-col pt-4 md:grid md:grid-cols-2 md:gap-y-4'>
                         {shopItems.map((item) => {
                             const owned = hasItem(item.id)
                             const canBuy = points >= item.price && !owned

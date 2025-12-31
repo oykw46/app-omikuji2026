@@ -120,15 +120,6 @@ body {
 .shop-item-list {
 	max-height: calc(73svh - 60px);
 }
-@media screen and (min-width: 768px) {
-	.header-img {
-		height: 45svh;
-		width: 100%;
-	}
-	.shop-item-list {
-		max-height: calc(45svh - 60px);
-	}
-}
 
 /* コレクション画面 */
 .item-flame {

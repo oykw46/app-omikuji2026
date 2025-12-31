@@ -61,7 +61,7 @@ export const FortuneResult = ({
 					className='mt-4 h-auto max-sm:w-1/2 w-auto mx-auto'
 				/>
 				{/* 巫女さんのセリフ */}
-				<div className='miko-message rounded-lg shadow-lg p-4 max-w-md mx-auto absolute top-36 left-14 right-14'>
+				<div className='miko-message rounded-lg shadow-lg p-4 max-w-md mx-auto absolute max-sm:top-36 md:top-52 left-14 right-14'>
 					<div className='absolute inset-0 bg-white opacity-80 rounded-2xl'></div>
 					<p className='text-gray-800 text-left relative text-sm'>
 						{mikoMessage}
@@ -71,7 +71,7 @@ export const FortuneResult = ({
 				</div>
 			</div>
 
-			<div className='absolute mt-64 max-sm:w-full'>
+			<div className='absolute max-sm:mt-64 md:mt-78 max-sm:w-full'>
 				<div className='relative shadow-lg '>
 					<div className='absolute inset-0 bg-white opacity-80'></div>
 					<h1 className='text-lg text-center font-bold pt-4 pb-2 text-red-600 old-standard-tt-bold relative'>{fortune.level}</h1>
@@ -90,7 +90,7 @@ export const FortuneResult = ({
 						text='もう一度引く'
 						onClick={onDrawAgain}
 						color='red'
-						className='shadow-2xl max-sm:text-sm text-sm rounded-full'
+						className='shadow-2xl max-sm:text-sm text-sm rounded-full max-sm:w-9/12 max-w-3/5 w-full'
 					/>
 				</div>
 			</div>

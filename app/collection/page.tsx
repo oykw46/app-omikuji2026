@@ -42,7 +42,7 @@ export default function CollectionPage() {
             }`}>
                 {/* タイトル */}
                 <div className='text-center py-8 '>
-                    <p className='text-gray-500 text-sm'>
+                    <p className='text-gray-500 text-sm md:text-lg'>
                         これまでに授かったお守りが並ぶ場所。<br />一つひとつにあなたの願いと<br />幸運が込められています。
                     </p>
                 </div>
@@ -60,11 +60,11 @@ export default function CollectionPage() {
                     </div>
                 ) : (
                     /* アイテムリスト */
-                    <div className='grid grid-cols-2 gap-3 w-11/12 mx-auto'>
+                    <div className='grid grid-cols-2 gap-3 w-11/12 md:w-9/12 md:gap-6 mx-auto'>
                         {myCollection.map((item) => (
                             <div
                                 key={item.id}
-                                className='bg-white rounded-lg shadow-lg p-4 transform transition-all hover:scale-105'
+                                className='bg-white rounded-lg shadow-lg p-4 md:p-8 transform transition-all hover:scale-105'
                             >
                                 <div className='relative px-4 py-3 w-5/6 mx-auto'>
                                     {/* 輝きエフェクト */}
@@ -78,10 +78,10 @@ export default function CollectionPage() {
                                         className='mx-auto mb-4 relative z-10 w-10/12'
                                     />
                                 </div>
-                                <h2 className='text-md font-bold text-center mt-4 mb-2 text-orange-900'>
+                                <h2 className='text-md md:text-lg font-bold text-center mt-4 mb-2 text-gray-500'>
                                     {item.name}
                                 </h2>
-                                <p className='text-gray-600 text-left text-sm nb-2'>
+                                <p className='text-gray-500 text-left text-sm md:text-base mt-2 md:mt-3'>
                                     {item.description}
                                 </p>
                             </div>
@@ -91,7 +91,7 @@ export default function CollectionPage() {
 
                 {/* 全て集めた時のメッセージ */}
                 {myCollection.length === shopItems.length && (
-                    <div className='bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-lg shadow-lg p-6 mt-15 text-center animate-bounce max-w-9/12 mx-auto'>
+                    <div className='bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-lg shadow-lg p-6 mt-15 text-center animate-bounce max-w-9/12 md:w-1/2 mx-auto'>
                         <p className='text-2xl font-bold mb-2 tracking-wider'>COMPLETE</p>
                         <p className='font-bold text-sm'>全てのアイテムを集めました<br />ここまで遊んでくれてありがとう✨</p>
                     </div>

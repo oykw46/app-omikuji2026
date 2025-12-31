@@ -73,7 +73,7 @@ export default function SettingsPage() {
                 </div>
 
                 {/* ユーザー名設定 */}
-                <div className='bg-white rounded-lg shadow-lg p-6'>
+                <div className='bg-white rounded-lg shadow-lg p-6 md:px-20'>
                     <h2 className='text-lg font-bold mb-4'>プレイヤー名</h2>
                     <div className='flex gap-2'>
                         <input
@@ -95,7 +95,7 @@ export default function SettingsPage() {
                 </div>
 
                 {/* 統計情報 */}
-                <div className='bg-white rounded-lg shadow-lg p-6'>
+                <div className='bg-white rounded-lg shadow-lg p-6 md:px-20'>
                     <h2 className='text-lg font-bold text-gray-800 mb-4'>統計情報</h2>
 
                     {/* 基本設計 */}
@@ -147,11 +147,11 @@ export default function SettingsPage() {
                 </div>
 
                 {/* 実績 */}
-                <div className='bg-white rounded-lg shadow-lg p-6'>
+                <div className='bg-white rounded-lg shadow-lg p-6 md:px-20'>
                     <h2 className='text-lg font-bold text-gray-800 mb-4'>
                         実績<span className='text-base text-blue-500'>（達成率 {achievementRate}%）</span>
                     </h2>
-                    <div className='space-y-3'>
+                    <div className='space-y-3 md:space-y-4 md:grid md:grid-cols-2 md:gap-x-4'>
                         {achievements.map((achievement) => (
                             <div
                                 key={achievement.id}
@@ -177,7 +177,7 @@ export default function SettingsPage() {
                 </div>
 
                 {/* その他の設定 */}
-                <div className='bg-white rounded-lg shadow-lg p-6'>
+                <div className='bg-white rounded-lg shadow-lg p-6 md:px-20'>
                     {/* BGM設定 */}
                     {/* <div className="flex items-center justify-between mb-6 pb-6 border-b">
                         <div>
