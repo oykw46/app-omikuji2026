@@ -74,7 +74,7 @@ export const FortuneResult = ({
 				<div className='relative shadow-lg '>
 					<div className='absolute inset-0 bg-white opacity-80'></div>
 					<h1 className='text-3xl text-center font-bold py-6 text-red-600 old-standard-tt-bold relative'>{fortune.level}</h1>
-					<div className='space-y-6 text-left pb-8 py-8 overflow-y-scroll max-w-full relative jp-vertical scrollbar-none max-sm:max-h-76 max-sm:h-100 text-sm'>
+					<div className='space-y-6 text-left pb-8 py-8 overflow-y-scroll max-w-full relative jp-vertical scrollbar-none max-sm:max-h-76 max-sm:h-100'>
 						{fortuneItems.map((item, index) => (
 							<FortuneLetter 
 								key={index}
@@ -105,7 +105,7 @@ type FortuneLetterProps = {
 
 const FortuneLetter = ({ label, value }: FortuneLetterProps) => {
 	return (
-		<p className='flex gap-4 text-lg old-standard-tt-bold'>
+		<p className='flex gap-4 text-sm old-standard-tt-bold'>
 			<span className='font-semibold text-gray-700 h-14 whitespace-nowrap'>{ label }</span>
 			<span className='text-gray-900 font-normal'>{ value }</span>
 		</p>
