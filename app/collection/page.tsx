@@ -24,7 +24,7 @@ export default function CollectionPage() {
                 />
 
                 {/* 集めたアイテムの数 */}
-                <div className='text-yellow-900 overflow-hidden shadow-lg rounded-r-full py-1 pl-4 pr-5 absolute left-0 absolute top-4 z-[1] flex items-center gap-1 font-bold'>
+                <div className='text-yellow-900 overflow-hidden shadow-lg rounded-r-full py-1 pl-4 pr-5 absolute left-0 absolute top-6 z-[1] flex items-center gap-1 font-bold'>
                     <div className='bg-white absolute inset-0 opacity-80 -z-[1]'></div>
                     <Image
                         src='/assets/items/item-almighty.webp'

@@ -46,7 +46,7 @@ export default function ShopPage() {
         <main className='min-h-screen relative overflow-hidden'>
             <div className='relative max-w-4xl w-full'>
                 {/* 所持ポイント */}
-			    <div className='text-yellow-900 overflow-hidden shadow-lg rounded-r-full py-1 pl-4 pr-5 absolute left-0 absolute top-4 z-[1] flex items-center gap-1 font-bold'>
+			    <div className='text-yellow-900 overflow-hidden shadow-lg rounded-r-full py-1 pl-4 pr-5 absolute left-0 absolute top-6 z-[1] flex items-center gap-1 font-bold'>
                     <div className='bg-white absolute inset-0 opacity-90 -z-[1]'></div>
                     <Image
                         src='/assets/coin.webp'
@@ -71,7 +71,7 @@ export default function ShopPage() {
 
                     {/* 店員さんのセリフ */}
                     <div className='miko-message rounded-lg shadow-lg p-4 mt-4 max-w-md mx-auto absolute bottom-3 left-14 right-14'>
-                        <div className='absolute inset-0 bg-white opacity-90 rounded-2xl'></div>
+                        <div className='absolute inset-0 bg-white opacity-80 rounded-2xl'></div>
                         <p className='text-gray-800 relative text-xs'>
                             {shopkeeper.message}
                         </p>
@@ -90,7 +90,7 @@ export default function ShopPage() {
                             return (
                                 <div
                                     key={item.id}
-                                    className='bg-white rounded-xl px-6 py-10 mx-4 mb-4 relative shadow-lg'
+                                    className='bg-white rounded-xl p-6 mx-4 mb-4 relative shadow-lg'
                                 >
                                     {/* 購入済みバッジ */}
                                     {owned && (
