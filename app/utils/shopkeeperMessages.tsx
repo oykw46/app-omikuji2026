@@ -1,10 +1,10 @@
 // ショップ店員さんの表情・セリフ
-import { useGameData } from '../hooks/useGameData'
+import { ReactNode } from 'react'
 export type ShopkeeperState = 'normal' | 'thanks' | 'sad'
 
 type ShopkeeperMessage = {
     image: string,
-    message: JSX.Element
+    message: ReactNode
 }
 
 export const getShopkeeperMessage = (

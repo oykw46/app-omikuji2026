@@ -1,7 +1,8 @@
 // 巫女さんのキャラクターセリフ
+import { ReactNode } from 'react'
 import { useGameData } from '../hooks/useGameData'
 
-export const getMikoMessage = (level: string, count: number): JSX.Element => {
+export const getMikoMessage = (level: string, count: number): ReactNode => {
   const isSpecial = count % 10 === 0
   const { username } = useGameData()
 
