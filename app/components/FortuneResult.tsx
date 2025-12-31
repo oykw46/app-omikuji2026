@@ -58,7 +58,7 @@ export const FortuneResult = ({
 					alt='おみくじ結果を読んでくれる巫女さん（ミコ）'
 					height={300}
 					width={300}
-					className='mt-6 h-auto max-sm:w-1/3 w-auto mx-auto'
+					className='mt-6 h-auto max-sm:w-1/4 w-auto mx-auto'
 				/>
 				{/* 巫女さんのセリフ */}
 				<div className='miko-message mx-auto mb-4 absolute top-40 max-sm:w-full'>
