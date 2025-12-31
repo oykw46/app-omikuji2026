@@ -42,7 +42,7 @@ export default function CollectionPage() {
             }`}>
                 {/* タイトル */}
                 <div className='text-center py-8 '>
-                    <p className='text-gray-500'>
+                    <p className='text-gray-500 text-sm'>
                         これまでに授かったお守りが並ぶ場所。<br />一つひとつにあなたの願いと<br />幸運が込められています。
                     </p>
                 </div>
@@ -93,7 +93,7 @@ export default function CollectionPage() {
                 {myCollection.length === shopItems.length && (
                     <div className='bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-lg shadow-lg p-6 mt-15 text-center animate-bounce max-w-9/12 mx-auto'>
                         <p className='text-2xl font-bold mb-2 tracking-wider'>COMPLETE</p>
-                        <p className='font-bold'>全てのアイテムを集めました<br />ここまで遊んでくれてありがとう✨</p>
+                        <p className='font-bold text-sm'>全てのアイテムを集めました<br />ここまで遊んでくれてありがとう✨</p>
                     </div>
                 )}
             </div>
